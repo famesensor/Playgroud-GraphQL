@@ -11,6 +11,7 @@ const PostType = new GraphQLObjectType({
         _id: { type: new GraphQLNonNull(GraphQLString) },
         title: { type: GraphQLString },
         content: { type: GraphQLString },
+        category: { type: GraphQLString },
         author_id: { type: new GraphQLNonNull(GraphQLString) },
         author: {
             typr: UserType,
