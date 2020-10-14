@@ -26,3 +26,5 @@ const QueryRootType = new GraphQLObjectType({
         }
     })
 });
+
+module.exports = QueryRootType;
