@@ -14,7 +14,7 @@ const PostType = new GraphQLObjectType({
         category: { type: GraphQLString },
         author_id: { type: new GraphQLNonNull(GraphQLString) },
         author: {
-            typr: UserType,
+            type: UserType,
             resolve: async (post) => {
                 const author = await User.findById(ObjectId(post.author_id));
                 if (!author) throw new Error(`User not found`);
